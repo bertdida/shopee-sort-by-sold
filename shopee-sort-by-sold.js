@@ -34,5 +34,6 @@
   if (container) {
     container.innerHTML = null;
     container.appendChild(elements);
+    container.scrollIntoView({ behavior: "smooth" });
   }
 })();
