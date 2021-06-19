@@ -31,6 +31,8 @@
     .forEach((e) => elements.appendChild(e.cloneNode(true)));
 
   const container = document.querySelector(CONTAINER_SELECTOR);
-  container.innerHTML = null;
-  container.appendChild(elements);
+  if (container) {
+    container.innerHTML = null;
+    container.appendChild(elements);
+  }
 })();
