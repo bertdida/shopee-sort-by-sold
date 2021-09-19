@@ -1,6 +1,6 @@
 (() => {
   const ITEM_SELECTOR = ".shopee-search-item-result__item";
-  const ITEM_SOLD_SELECTOR = ".go5yPW";
+  const ITEM_SOLD_SELECTOR = "[data-sqe=rating] + div";
   const CONTAINER_SELECTOR = ".shopee-search-item-result__items";
 
   function parseSold(value) {
